@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>联想商城搜索</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/search.css">
+    <link rel="stylesheet" type="text/css" href="css/submitbox.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/submitbox.js"></script>
+    <script src="js/search.js"></script>
+
+
+</head>
+
+<body>
+    <!--顶部加广告位-->
+    <div class="header">
+        <div class='header_top'>
+            <div class="wrap">
+                <div class="header_top_right">
+                    <a class="submit" href="javascript:;">登录</a>
+                    <a class="register" href="javascript:;">注册</a>
+                    <span class="header-un" style="display:none">underfind</span>
+                    <span style="display:none" class="logout"><a href="javascript:;">退出登录</a></span>
+                    <a class="cart" href="/Lenovo/getcart.html" style="display:none">预约购买</a>
+                    <!--<span class="num" style="display:none">0</span>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--主体-->
+    <div class="wrap">
+        <!--搜索栏-->
+        <div class="searchbar">
+            <div class="logo">
+                <a href="/Lenovo"></a>
+            </div>
+            <div class="searchpart">
+                <input class="searchbox">
+                <a href="javascript:;" class="searchbutton"></a>
+            </div>
+        </div>
+        <!--选项栏-->
+        <div class="optbar">
+            <div class="title">
+                <div class="result"><a href="javascript:;">全部结果</a>>><span></span></div>
+                <div class="amount">共<span> 0 </span>款产品</div>
+                <div class="option"></div>
+            </div>
+
+            <!---->
+            <div class="opts">
+                <div id="productname" class="opt">
+                    <dt>子品牌：</dt>
+                    <dd>
+                        <a name="Lenovo" href="javascript:;">Lenovo</a>
+                        <a name="ThinkPad" href="javascript:;">ThinkPad</a>
+                        <a name="Yoga" href="javascript:;">Yoga</a>
+                        <a name="MIIX" href="javascript:;">MIIX</a>
+                        <a href="javascript:;">小新</a>
+                    </dd>
+                </div>
+                <div id="type" class="opt">
+                    <dt>类型：</dt>
+                    <dd>
+                        <a href="javascript:;">办公本</a>
+                        <a href="javascript:;">游戏本</a>
+                        <a href="javascript:;">便携本</a>
+                    </dd>
+                </div>
+                <div id="unitprice" class="opt">
+                    <dt>价格：</dt>
+                    <dd>
+                        <a href="javascript:;">0-1999元</a>
+                        <a href="javascript:;">2000-2999元</a>
+                        <a href="javascript:;">3000-3999元</a>
+                        <a href="javascript:;">4000-4999元</a>
+                        <a href="javascript:;">5000-6999元</a>
+                        <a href="javascript:;">7000-9999元</a>
+                        <a href="javascript:;">10000-15000元</a>
+                        <a href="javascript:;">15000-60000元</a>
+                    </dd>
+                </div>
+                <div id="cpu" class="opt">
+                    <dt>CPU型号：</dt>
+                    <dd>
+                        <a href="javascript:;">intel i3</a>
+                        <a href="javascript:;">intel i5</a>
+                        <a href="javascript:;">intel i7</a>
+                        <a href="javascript:;">AMD</a>
+                        <a href="javascript:;">其他</a>
+                    </dd>
+                </div>
+                <div id="os" class="opt">
+                    <dt>操作系统：</dt>
+                    <dd>
+                        <a href="javascript:;">windows 7</a>
+                        <a href="javascript:;">windows 8</a>
+                        <a href="javascript:;">windows 10</a>
+                    </dd>
+                </div>
+                <div id="memory" class="opt">
+                    <dt>内存容量：</dt>
+                    <dd>
+                        <a href="javascript:;">4GB</a>
+                        <a href="javascript:;">8GB</a>
+                        <a href="javascript:;">16GB</a>
+                    </dd>
+                </div>
+                <div id="harddisk" class="opt">
+                    <dt>硬盘容量：</dt>
+                    <dd>
+                        <a href="javascript:;">500GB</a>
+                        <a href="javascript:;">1TB</a>
+                        <a href="javascript:;">128GB SSD</a>
+                        <a href="javascript:;">256GB SSD</a>
+                        <a href="javascript:;">512GB SSD</a>
+                    </dd>
+                </div>
+                <div id="size" class="opt">
+                    <dt>屏幕尺寸：</dt>
+                    <dd>
+                        <a href="javascript:;">12.2英寸</a>
+                        <a href="javascript:;">13.3英寸</a>
+                        <a href="javascript:;">14.0英寸</a>
+                        <a href="javascript:;">15.6英寸</a>
+                        <a href="javascript:;">17.3英寸</a>
+                    </dd>
+                </div>
+                <div id="dpi" class="opt">
+                    <dt>独显：</dt>
+                    <dd>
+                        <a href="javascript:;">2G独显</a>
+                        <a href="javascript:;">4G独显</a>
+                        <a href="javascript:;">无</a>
+                    </dd>
+                </div>
+            </div>
+        </div>
+        <!--商品展示表-->
+        <div class="list">
+            <div class="tool">
+                <div class="tool-left">
+                    <a id="order" href="javascript:;">价格由高到低</a>
+                    <a id="revorder" href="javascript:;">价格由低到高</a>
+                </div>
+                <div class="tool-right">
+                    <!--<a class="curpage">1</a>
+                    <a>/</a>
+                    <a class="totalpage">1</a>
+                    <a href="javascript:;">首页</a>
+                    <a href="javascript:;">上一页</a>
+                    <a href="javascript:;">下一页</a>
+                    <a href="javascript:;">尾页</a>-->
+
+                </div>
+            </div>
+            <div class="itembox" id="productList">
+                <p class="item-null" style='color:#E2231A;padding-left:450px;display:none'> 抱歉， 您搜索的商品不存在！ </p>
+                <!--<div class="list-bottom">
+                    <div class="tool-right">
+                        <a class="curpage">1</a>
+                        <a>/</a>
+                        <a class="totalpage">1</a>
+                        <a href="javascript:;">首页</a>
+                        <a href="javascript:;">上一页</a>
+                        <a href="javascript:;">下一页</a>
+                        <a href="javascript:;">尾页</a>
+
+                    </div>
+                </div>-->
+            </div>
+        </div>
+        <!--本div为wrap结束-->
+    </div>
+    <!--底部-->
+    <div class="footer">
+
+        <div class="footer-img">
+        </div>
+        <div class="footer-help">
+            <div class="footer-list">
+                <dl>
+                    <dt>
+                        购物指南
+                    </dt>
+                    <dd>
+                        <a href="javascript:;">服务商信息</a>
+                        <a href="javascript:;">购买流程</a>
+                        <a href="javascript:;">注册登录</a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="footer-list">
+                <dl>
+                    <dt>
+                        配送方式
+                    </dt>
+                    <dd>
+                        <a href="javascript:;">配送方式</a>
+                        <a href="javascript:;">配送方式信息</a>
+                        <a href="javascript:;">签收原则</a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="footer-list">
+                <dl>
+                    <dt>
+                        支付方式
+                    </dt>
+                    <dd>
+                        <a href="javascript:;">支付方式</a>
+                        <a href="javascript:;">支付问题</a>
+                        <a href="javascript:;">分期支付</a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="footer-list">
+                <dl>
+                    <dt>
+                        售后服务
+                    </dt>
+                    <dd>
+                        <a href="javascript:;">售后服务总则</a>
+                        <a href="javascript:;">24小时客服在线</a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="footer-list">
+                <dl>
+                    <dt>
+                        其他说明
+                    </dt>
+                    <dd>
+                        <a href="javascript:;">服务承诺</a>
+                        <a href="javascript:;">账户安全</a>
+                        <a href="javascript:;">产品安全</a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            版权所有：1998-2016 联想集团 | 京ICP备11035381 | 京公网安备110108007970号 | 营业执照：110000410127232
+        </div>
+    </div>
+    <!--登陆注册框-->
+    <div class="login-box" style="display: none;">
+    </div>
+    <form id="login-form" action="" method="post" target="nm_iframe" onsubmit="return checkForm()">
+        <div class="submitbox-top">
+            <a class="login">登录</a>
+            <a class="signin">注册</a>
+        </div>
+        <div class="un-input">
+            <input type="text" value="&nbsp请在这里输入用户名" id="username" name="Username">
+            <p id="un-error"></p>
+        </div>
+        <div class="pwd-input">
+            <input type="text" value="&nbsp请在这里输入密码" id="show-password">
+            <input type="password" id="input-password">
+            <input type="hidden" id="md5-password" name="Password">
+            <p id="pwd-error"></p>
+        </div>
+        <div class="captcha-input">
+            <input type="text" value="&nbsp请输入验证码" id="captcha" name="code">
+            <button type="button">发送验证码</button>
+            <p id="cap-error"></p>
+        </div>
+        <div class="autosubmit">
+            <input type="checkbox">自动登录
+        </div>
+        <div class="submit-button">
+
+            <button class="submitbutton" type="submit">提交</button>
+        </div>
+
+
+    </form>
+    <iframe id="id_iframe" name="nm_iframe" style="display:none;"></iframe>
+    <div class="hide" style="display:none">
+        <li>
+            <a href="javascript:;">
+                <div class="item-img">
+                    <img src="img/exampleimg.jpg">
+                </div>
+                <div class="item-name">
+                    <span class="productname">产品名</span> <span class="productid">id </span>
+                </div>
+                <div class="item-info">
+                    <span class="productinfo">简介</span>
+
+                </div>
+                <div class="item-price">
+                    商城价：<span>4399.00</span>
+                </div>
+            </a>
+        </li>
+    </div>
+
+</body>

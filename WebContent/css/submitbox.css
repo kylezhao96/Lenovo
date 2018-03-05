@@ -1,0 +1,113 @@
+/*登陆注册框*/
+
+.login-box {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #000;
+    opacity: .3;
+}
+
+#login-form {
+    font-size: 12px;
+    position: fixed;
+    width: 400px;
+    height: 250px;
+    background: #FFFFFF;
+    left: 35%;
+    top: 80px;
+    display: none;
+}
+
+.login,
+.signin {
+    display: block;
+    height: 40px;
+    width: 200px;
+    background: #000000;
+    color: #EF1C22;
+    font-weight: bold;
+    font-size: 14px;
+    float: left;
+    text-align: center;
+    line-height: 38px;
+    border-bottom: 5px solid;
+}
+
+.un-input,
+.pwd-input,
+.captcha-input {
+    float: left;
+    padding: 20px 0 0 100px;
+    width: 100%;
+    height: 30px;
+    font-size: 12px;
+}
+
+#pwd-error,
+#un-error {
+    display: block;
+    color: red;
+    float: left;
+    height: 10px;
+    width: 100%;
+}
+
+#username,
+#show-password,
+#input-password {
+    width: 200px;
+    height: 30px;
+    color: #BBBBBB;
+    border: 1px solid #BBBBBB;
+}
+
+#captcha {
+    width: 100px;
+    height: 30px;
+    color: #BBBBBB;
+    border: 1px solid #BBBBBB;
+    float: left;
+}
+
+.captcha-input button {
+    float: left;
+    width: 90px;
+    height: 32px;
+    border: 0;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.submit-button {
+    width: 100%;
+    height: 20px;
+    float: left;
+    padding: 10px 100px;
+}
+
+.autosubmit {
+    float: left;
+    width: 100%;
+    height: auto;
+    padding: 30px 0 0 100px;
+}
+
+.submit-button button {
+    width: 200px;
+    background: #EF1C22;
+    padding: 2px 0px;
+    border: 0;
+    color: #FFFFFF;
+    border-radius: 5px
+}
+
+.selectedlogin {
+    border-bottom-color: #EF1C22;
+}
+
+.unselectedlogin {
+    border-bottom-color: #000000;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>联想后台管理系统</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/bms.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bms.js"></script>
+
+
+
+</head>
+
+<body>
+    <div class="mainpart" style="display: none;">
+        <table>
+            <tbody>
+                <tr>
+                    <th class="id">id</th>
+                    <th class="productname">子品牌</th>
+                    <th class="productid">型号</th>
+                    <th class="color">颜色</th>
+                    <th class="cpu">cpu</th>
+                    <th class="memory">内存</th>
+                    <th class="harddisk">硬盘</th>
+                    <th class="type">种类</th>
+                    <th class="size">尺寸</th>
+                    <th class="dpi">独显</th>
+                    <th class="unitprice">价格</th>
+                    <th class="pic1 pic">图片1</th>
+                    <th class="pic2 pic">图片2</th>
+                    <th class="pic3 pic">图片3</th>
+                    <th class="pic4 pic">图片4</th>
+                    <th class="pic5 pic">图片5</th>
+                    <th class="description">描述</th>
+                    <th class="delete">操作</th>
+                </tr>
+            </tbody>
+        </table>
+        <div class="last">
+            <button class='addp'>+</button>
+            <button style="display:none" class="cancel">取消</button>
+        </div>
+    </div>
+    <div class="selectbar" style="display: none;">
+        <div class="title">欢迎管理员<span></span></div>
+        <div class="tool-1"><a href="javascript:;">管理商品信息</a>
+        </div>
+    </div>
+    <!--登陆注册框-->
+    <form id="login-form" target="nm_iframe" onsubmit="return checkForm()">
+        <div class="submitbox-top">
+            <a class="login">欢迎登录联想后台管理系统</a>
+        </div>
+        <div class="un-input">
+            <input type="text" value="&nbsp请输入管理员账号" id="username" name="Username">
+            <p id="un-error"></p>
+        </div>
+        <div class="pwd-input">
+            <input type="text" value="&nbsp请在输入密码" id="show-password">
+            <input type="password" id="input-password">
+            <input type="hidden" id="md5-password" name="Password">
+            <p id="pwd-error"></p>
+        </div>
+        <div class="submit-button">
+            <button type="submit">提交</button>
+        </div>
+    </form>
+    <div class="hide" style="display:none">
+        <table>
+            <tbody>
+                <tr class="add">
+                    <td class="id">id</td>
+                    <td class="productname"><input type="text" value="子品牌"></td>
+                    <td class="productid"><input type="text" value="型号"></td>
+                    <td class="color"><input type="text" value="颜色"></td>
+                    <td class="cpu"><input type="text" value="cpu"></td>
+                    <td class="memory"><input type="text" value="内存"></td>
+                    <td class="harddisk"><input type="text" value="硬盘"></td>
+                    <td class="type"><input type="text" value="种类"></td>
+                    <td class="size"><input type="text" value="尺寸"></td>
+                    <td class="dpi"><input type="text" value="独显"></td>
+                    <td class="unitprice"><input type="text" value="价格"></td>
+                    <td class="pic1"><input type="text" value="图片1"></td>
+                    <td class="pic2"><input type="text" value="图片2"></td>
+                    <td class="pic3"><input type="text" value="图片3"></td>
+                    <td class="pic4"><input type="text" value="图片4"></td>
+                    <td class="pic5"><input type="text" value="图片5"></td>
+                    <td class="description"><input type="text" value="描述"></td>
+                    <td class="delete"><button>删除</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <iframe id="id_iframe" name="nm_iframe" style="display:none;"></iframe>
+    <div style="display:none" class="pwd"></div>
+
+
+</body>

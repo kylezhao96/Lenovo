@@ -1,0 +1,206 @@
+body {
+    text-align: center;
+}
+
+.selectbar {
+    width: 100px;
+    background: #000000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    color: #FFFFFF;
+}
+
+.selectbar a {
+    display: block;
+    font-size: 14px;
+}
+
+.selectbar a:hover {
+    background: #e2231a;
+}
+
+.selectbar a,
+.title {
+    color: #FFFFFF;
+    padding: 20px 0;
+    width: 100%;
+    border-bottom: 1px solid #BBBBBB;
+}
+
+
+/*主体部分*/
+
+.mainpart {
+    width: 1297px;
+    height: auto;
+    padding: 0;
+    margin: 10px auto;
+}
+
+.mainpart input {
+    border: 0;
+    height: 100%;
+    width: 90%;
+    margin: 0;
+}
+
+#selected {
+    background: #000000;
+    color: #FFFFFF;
+}
+
+#selected input {
+    background: #000000;
+    color: #FFFFFF;
+}
+
+th,
+td {
+    border: 1px solid #000000
+}
+
+table {
+    table-layout: fixed;
+    -webkit-border-horizontal-spacing: 0px;
+    -webkit-border-vertical-spacing: 0px;
+}
+
+td {
+    height: 40px;
+}
+
+td input {
+    width: 80%;
+    height: 80%;
+}
+
+.id {
+    width: 30px;
+}
+
+.productname {
+    width: 80px;
+}
+
+.productid {
+    width: 120px;
+}
+
+.color {
+    width: 40px;
+}
+
+.cpu {
+    width: 50px;
+}
+
+.memory {
+    width: 50px;
+}
+
+.harddisk {
+    width: 100px;
+}
+
+.type {
+    width: 80px;
+}
+
+.size {
+    width: 60px;
+}
+
+.dpi {
+    width: 60px;
+}
+
+.unitprice {
+    width: 60px;
+}
+
+.pic1,
+.pic2,
+.pic3,
+.pic4,
+.pic5 {
+    width: 60px;
+}
+
+.description {
+    width: 200px;
+}
+
+.delete {
+    width: 50px;
+}
+
+
+/*登录框*/
+
+#login-form {
+    font-size: 12px;
+    /*position: fixed;*/
+    width: 400px;
+    height: 250px;
+    background: #FFFFFF;
+    margin: 150px auto;
+    border: 1px solid #000000;
+}
+
+.login {
+    display: block;
+    height: 40px;
+    width: 100%;
+    background: #000000;
+    color: #EF1C22;
+    font-weight: bold;
+    font-size: 14px;
+    float: left;
+    text-align: center;
+    line-height: 38px;
+    border-bottom: 5px solid;
+}
+
+.un-input,
+.pwd-input {
+    float: left;
+    padding: 30px 0 0 0;
+    width: 100%;
+    height: 30px;
+    font-size: 12px;
+}
+
+#pwd-error,
+#un-error {
+    display: block;
+    color: red;
+    float: left;
+    height: 10px;
+    width: 100%;
+}
+
+#username,
+#show-password,
+#input-password {
+    width: 200px;
+    height: 30px;
+    color: #BBBBBB;
+    border: 1px solid #BBBBBB;
+}
+
+.submit-button {
+    width: 100%;
+    height: 20px;
+    float: left;
+    padding: 30px 0px;
+}
+
+.submit-button button {
+    width: 200px;
+    background: #EF1C22;
+    padding: 2px 0px;
+    border: 0;
+    color: #FFFFFF;
+    border-radius: 5px
+}

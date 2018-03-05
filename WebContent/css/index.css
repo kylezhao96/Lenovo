@@ -1,0 +1,313 @@
+/*包裹体*/
+
+.wrap {
+    width: 1200px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner {
+    width: 100%;
+    height: 102px;
+}
+
+.bannerimg {
+    margin: 1px 0px;
+    height: 100px;
+    overflow: hidden;
+    background: url(../img/banner.jpg) no-repeat;
+}
+
+.button_close {
+    float: right;
+    background: url(../img/close.png) no-repeat;
+    margin: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+.header {
+    width: 100%;
+    height: 139px;
+}
+
+
+/*选择栏*/
+
+.selectbox {
+    margin-top: 20px;
+    width: 100%;
+    height: 361px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    /*background: #000000;*/
+}
+
+.selectbox_left {
+    float: left;
+    width: 190px;
+    height: 100%;
+    /*background: #000000*/
+}
+
+.selectbox_left ol {
+    height: 119px;
+    line-height: 119px;
+    width: 100%;
+}
+
+.selectbox_left a {
+    border: 1px solid #dbdbdb;
+    margin-bottom: -1px;
+    padding-left: 20px;
+    padding-right: 5px;
+    color: #000000;
+    font-size: 18px;
+    width: 163px;
+    float: left;
+}
+
+.selectbox_left a:hover {
+    background: #F7F7F7;
+    color: #E2231A;
+}
+
+.selectbox_left span {
+    float: right;
+    font-size: 18px;
+}
+
+.selectbox_mid {
+    margin: 0 10px;
+    float: left;
+    width: 770px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.selectbox_mid img {
+    width: 100%;
+    height: 100%;
+}
+
+.selectbox_right {
+    float: right;
+    width: 220px;
+    height: 100%;
+    /*background: #000000;*/
+}
+
+.title {
+    width: 100%;
+    height: 116px;
+    background: url(../img/title.jpg) no-repeat;
+}
+
+.todayrecommed_1 {
+    margin-top: 5px;
+    width: 100%;
+    height: 120px;
+    background: url(../img/mix5.jpg) no-repeat;
+}
+
+.todayrecommed_1 a {
+    float: right;
+    width: 100%;
+    height: 120px;
+}
+
+.todayrecommed_2 {
+    height: 120px;
+    width: 100%;
+    background: url(../img/thinkpads.jpg) no-repeat;
+}
+
+.todayrecommed_2 a {
+    float: right;
+    width: 100%;
+    height: 120px;
+}
+
+
+/*商品1楼*/
+
+.floor {
+    width: 100%;
+    height: 601px;
+    background: #F5F5F5;
+    padding-bottom: 30px;
+}
+
+.floor-title {
+    padding-top: 30px;
+    height: 20px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+
+.floor-title span {
+    font-size: 20px;
+}
+
+.floor-item {
+    width: 100%;
+    height: 540px;
+}
+
+.floor-ad {
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.floor-ad a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.item {
+    background: #FFFFFF;
+    border: 1px solid #bfbfbf;
+    margin-bottom: -1px;
+    margin-left: -1px;
+    width: 239px;
+    height: 269px;
+    float: left;
+}
+
+.item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.item-img {
+    float: left;
+    height: 180px;
+    width: 100%;
+    transition: background-position 0.5s;
+    -moz-transition: background-position 0.5s;
+    -webkit-transition: background-position 0.5s;
+    -o-transition: background-position 0.5s;
+}
+
+.item-img:hover {
+    background-position: 60% 50%;
+}
+
+.info {
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: auto;
+}
+
+.model {
+    font-size: 18px;
+}
+
+.intro {
+    font-size: 10px;
+    color: #bfbfbf;
+}
+
+.price {
+    font-size: 14px;
+    color: #E2231A;
+}
+
+
+/*一楼中需要js读取改动的地方*/
+
+.floor_1-ad {
+    background: url(../img/floor1ad.jpg);
+}
+
+.item-img img {
+    width: 80%;
+    padding-left: 26px;
+}
+
+
+/*2楼*/
+
+.floor_2-ad {
+    background: url(../img/floor2ad.jpg);
+}
+
+
+/*3楼*/
+
+.floor_3-ad {
+    background: url(../img/floor3ad.jpg);
+}
+
+
+/*底部*/
+
+.footer {
+    width: 100%;
+    height: 270px;
+    background: #F5F5F5;
+}
+
+.footer-img {
+    width: 100%;
+    height: 83px;
+    background: url(../img/footer.jpg) no-repeat center;
+}
+
+.footer-help {
+    height: 140px;
+    width: 100%;
+    background: #FFFFFF;
+}
+
+.footer-list {
+    height: 100%;
+    width: 20%;
+    float: left;
+}
+
+.footer-list dt {
+    padding: 20px 0px 0px 80px;
+    font-size: 14px;
+}
+
+.footer-list dd {
+    padding: 10px 0px 0px 80px;
+}
+
+.footer-list a {
+    width: 100%;
+    display: block;
+    font-size: 12px;
+    color: #727171;
+}
+
+.footer-list a:hover {
+    color: #000000;
+}
+
+.footer-copyright {
+    width: 713px;
+    padding: 15px 0px;
+    margin: 0 auto;
+    color: black;
+    font-size: 12px;
+}
+
+.up {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.up img {
+    width: 30px;
+    height: 30px;
+}

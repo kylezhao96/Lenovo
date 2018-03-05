@@ -1,0 +1,211 @@
+/*选项栏*/
+
+.optbar {
+    padding-top: 30px;
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    width: 1199px;
+    float: left;
+    line-height: 48px;
+    background: #FBFBFB;
+    border: 1px solid #dbdbdb;
+    margin-bottom: -1px;
+}
+
+.selected {
+    background: #FFFFFF;
+    border: 1px solid #dbdbdb;
+    padding: 6px 10px;
+    color: #E2231A;
+}
+
+.divselected {
+    background: #F3F3F3;
+}
+
+.selected:hover {
+    border-color: #E2231A;
+}
+
+.result {
+    padding-left: 20px;
+    font-size: 15px;
+    float: left;
+}
+
+.result span {
+    font-size: 15px;
+}
+
+.result a:hover {
+    color: #E2231A;
+}
+
+.amount {
+    padding-right: 20px;
+    float: right;
+    font-size: 15px;
+}
+
+.amount span {
+    color: #E2231A;
+    font-size: 15px;
+}
+
+
+/*选项栏*/
+
+.opts {
+    float: left;
+    width: 100%;
+    height: AUTO;
+}
+
+.opt {
+    border: 1px solid #dbdbdb;
+    margin-bottom: -1px;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    float: left;
+    width: 1199px;
+}
+
+.opt dt,
+.opt dd {
+    float: left;
+}
+
+.opt dt {
+    color: #E2231A;
+    margin-left: 30px;
+    font-size: 14px;
+    width: 110px;
+}
+
+.opt dd a {
+    margin-right: 50px;
+    font-size: 13px;
+}
+
+.opt dd a:hover {
+    color: #E2231A;
+}
+
+
+/*商品list*/
+
+.list {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+.tool {
+    width: 1199px;
+    height: 36px;
+    background: #F3F3F3;
+    border: 1px solid #dbdbdb;
+    margin-bottom: -1px;
+}
+
+.tool-left {
+    float: left;
+    margin-left: 10px;
+}
+
+.tool-left a {
+    font-size: 12px;
+    margin: 12px 0px;
+    padding: 0px 10px;
+    float: left;
+    border-left: 1px solid #bfbfbf;
+    height: 12px;
+    line-height: 12px;
+}
+
+.tool-right {
+    float: right;
+    margin-right: 10px;
+}
+
+.tool-right a {
+    font-size: 12px;
+    margin: 12px 0px;
+    padding: 0px 5px;
+    float: left;
+    height: 12px;
+    line-height: 12px;
+}
+
+.curorder {
+    color: #E2231A;
+}
+
+.itembox {
+    width: 100%;
+    height: auto;
+    border-left: 1px solid #dbdbdb;
+}
+
+.itembox li {
+    display: block;
+    width: 299px;
+    height: 339px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: -1px;
+    margin-left: -1px;
+    float: left;
+}
+
+.item-img {
+    display: block;
+    width: 299px;
+    height: 220px;
+}
+
+.item-img img {
+    margin: 40px 0 0 60px;
+    height: 180px;
+}
+
+.item-info,
+.item-name {
+    padding: 0px 24px;
+}
+
+.item-name span,
+.item-info span {
+    font-size: 12px;
+}
+
+.item-box li a:hover {
+    color: #E2231A;
+}
+
+.item-price {
+    padding: 5px 24px;
+    widows: 100%;
+    color: #E2231A;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.item-price span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.list-bottom {
+    float: left;
+    width: 1199px;
+    height: 36px;
+    margin-bottom: -1px;
+}
+
+.order_active {
+    color: #E2231A;
+}

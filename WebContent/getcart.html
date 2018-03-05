@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/submitbox.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/cart.css">
+    <link rel="stylesheet" type="text/css" href="css/getcart.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/submitbox.js"></script>
+    <script src="js/getcart.js"></script>
+
+
+
+</head>
+
+<body>
+    <!--顶部加广告位-->
+    <div class="header">
+        <div class='header_top'>
+            <div class="wrap">
+                <div class="header_top_right">
+                    <a class="submit" href="javascript:;">登录</a>
+                    <a class="register" href="javascript:;">注册</a>
+                    <span class="header-un" style="display:none">undefined</span>
+                    <span style="display:none" class="logout"><a href="javascript:;">退出登录</a></span>
+                    <a class="cart" href="javascript:;" style="display:none">预约购买</a>
+                    <!--<span class="num" style="display:none">0</span>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--主体-->
+    <div class="wrap">
+        <!--搜索栏-->
+        <div class="searchbar">
+            <div class="logo">
+                <a href="/Lenovo"></a>
+            </div>
+            <div class="searchpart">
+                <input class="searchbox">
+                <a href="javascript:;" class="searchbutton"></a>
+            </div>
+        </div>
+        <!--主体-->
+        <div class="cart">
+            <div class="cart-header">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th width="60px"><input class="selectAll" type="checkbox" /></th>
+                            <!--<th width="163px">商品</th>-->
+                            <th width="412px">商品</th>
+                            <th style="display:none" width="152px">单价</th>
+                            <th width="152px">数量</th>
+                            <th width="152px">总价</th>
+                            <th width="152px">姓名</th>
+                            <th width="152px">邮箱</th>
+                            <th width="152px">地址</th>
+                            <th width="117px">操作</th>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+            <div class="cart-null">
+                您暂无预约购买 ，您可以
+                <a href="javascript:;"><button type="button">选购商品</button></a>
+            </div>
+            <div class="cart-list">
+                <table>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="cart-cost">
+                <div>
+                    <span>合计：</span>
+                    <span class="pricesum" style="color:#E2231A">0</span>
+                    <span style="color:#E2231A">.00元</span>
+                </div>
+            </div>
+            <div class="settle">
+                <a href="javascript:;">立即购买</a>
+            </div>
+        </div>
+    </div>
+    <!--底部-->
+    <div class="footer">
+
+        <div class="footer-img">
+        </div>
+        <div class="footer-help">
+            <div class="footer-list">
+                <dl>
+                    <dt>
+                        购物指南
+                    </dt>
+                    <dd>
+                        <a href="javascript:;">服务商信息</a>
+                        <a href="javascript:;">购买流程</a>
+                        <a href="javascript:;">注册登录</a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="footer-list">
+                <dl>
+                    <dt>
+                        配送方式
+                    </dt>
+                    <dd>
+                        <a href="javascript:;">配送方式</a>
+                        <a href="javascript:;">配送方式信息</a>
+                        <a href="javascript:;">签收原则</a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="footer-list">
+                <dl>
+                    <dt>
+                        支付方式
+                    </dt>
+                    <dd>
+                        <a href="javascript:;">支付方式</a>
+                        <a href="javascript:;">支付问题</a>
+                        <a href="javascript:;">分期支付</a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="footer-list">
+                <dl>
+                    <dt>
+                        售后服务
+                    </dt>
+                    <dd>
+                        <a href="javascript:;">售后服务总则</a>
+                        <a href="javascript:;">24小时客服在线</a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="footer-list">
+                <dl>
+                    <dt>
+                        其他说明
+                    </dt>
+                    <dd>
+                        <a href="javascript:;">服务承诺</a>
+                        <a href="javascript:;">账户安全</a>
+                        <a href="javascript:;">产品安全</a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            版权所有：1998-2016 联想集团 | 京ICP备11035381 | 京公网安备110108007970号 | 营业执照：110000410127232
+        </div>
+    </div>
+
+    <!--登陆注册框-->
+    <div class="login-box" style="display: none;">
+    </div>
+    <form id="login-form" target="nm_iframe" onsubmit="return checkForm()">
+        <div class="submitbox-top">
+            <a class="login">登录</a>
+            <a class="signin">注册</a>
+        </div>
+        <div class="un-input">
+            <input type="text" value="&nbsp请在这里输入用户名" id="username" name="Username">
+            <p id="un-error"></p>
+        </div>
+        <div class="pwd-input">
+            <input type="text" value="&nbsp请在这里输入密码" id="show-password">
+            <input type="password" id="input-password">
+            <input type="hidden" id="md5-password" name="Password">
+            <p id="pwd-error"></p>
+        </div>
+        <div class="captcha-input">
+            <input type="text" value="&nbsp输入获取的验证码" id="captcha">
+            <button type="button">获取手机验证码</button>
+        </div>
+        <div class="autosubmit">
+            <input type="checkbox">自动登录
+        </div>
+        <div class="submit-button">
+            <button type="submit">提交</button>
+        </div>
+
+
+    </form>
+    <iframe id="id_iframe" name="nm_iframe" style="display:none;"></iframe>
+    <div class="hide" style="display:none;">
+        <table>
+            <tbody>
+                <tr>
+                    <td width="60px"><input class="select" type="checkbox" /></td>
+                    <!--<td width="163px">
+                        <a class="option" href="javascript:;">
+                            <span class="name">
+                            </span>
+                            <span class="Id">
+                            </span>
+                        </a>
+                    </td>-->
+                    <td class="description" width="412px"></td>
+                    <td style="display:none" class="price" width="152px"></td>
+                    <td width="152px" class="pronum"><input type="number" value="1" style="width:50px;margin-left:50px;"></td>
+                    <td class="sumprice" width="152px"></td>
+                    <td class="name" width="152px">姓名</td>
+                    <td class="email" width="152px">邮箱</td>
+                    <td class="address" width="152px">地址</td>
+                    <td class="id" style="display:none"></td>
+                    <td class="delete" width="117px"><a href="javascript:;">删除</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
